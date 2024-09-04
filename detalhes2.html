@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD - Detalhes da Imagem</title>
+    <link rel="stylesheet" href="detalhes.css">
+
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="search-button">Voltar</a>
+            </div>
+            <div class="nav-center">
+                <a href=""><img src="imagem/nasao.png" alt="NASA Logo" class="logo"></a>
+            </div>
+            <div class="nav-right">
+                <a href="#">New events</a>
+                <a href="#">Multimédia</a>
+                <a href="#">NASA+ <span class="highlight">live</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br><br><br><br><br><br>
+        <h1>DETALHES</h1>
+        <div id="imageDetails" class="image-details"></div>
+    </main>
+    <br><br><br><br><br><br>
+    <footer>
+        <img src="imagem/footernasa.png" alt="footer da nasa">
+    </footer>
+
+
+    <script>
+        
+        const asteroidData = JSON.parse(sessionStorage.getItem('selectedAsteroid'));
+    
+        if (asteroidData) {
+            const detailsContainer = document.getElementById('imageDetails');
+            detailsContainer.innerHTML = `
+                <h2>${asteroidData.name}</h2>
+                <p><strong>Data de Aproximação:</strong> ${new Date(asteroidData.close_approach_data[0].close_approach_date).toLocaleDateString()}</p>
+                <p><strong>Distância:</strong> ${asteroidData.close_approach_data[0].miss_distance.kilometers} km</p>
+                <p><strong>Diâmetro Máximo:</strong> ${asteroidData.estimated_diameter.meters.estimated_diameter_max} m</p>
+            `;
+        } else {
+
+            const detailsContainer = document.getElementById('imageDetails');
+            detailsContainer.innerHTML = '<p>Erro: Nenhum dado de asteroide encontrado.</p>';
+        }
+    </script>
+</body>
+</html>

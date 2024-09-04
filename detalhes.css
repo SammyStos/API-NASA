@@ -1,0 +1,139 @@
+body {
+    background-color: #000000; 
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #000000; 
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed; 
+    
+    left: 0;
+    z-index: 1000; 
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-button {
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+background-color: rgb(7, 7, 83);
+color: #fff;
+cursor: pointer;
+transition: background-color 0.3s ease;
+margin-left: 10px;
+}
+
+.search-button:hover {
+background-color: #dd1717;
+}
+
+.nav-center {
+flex-grow: 1;
+text-align: center;
+margin-left: 150px;
+}
+
+.logo {
+max-width: 75px;
+height: auto;
+margin-left: 80px;
+}
+
+.nav-right a {
+color: #fff;
+text-decoration: none;
+margin: 0 10px;
+}
+
+.nav-right a:hover {
+text-decoration: underline;
+}
+
+.image-details {
+display: flex;
+align-items:center;
+justify-content: center;
+
+}
+
+.image-container img {
+width: 60%;
+height: 90%;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+max-width: 600px;
+text-align: right; 
+}
+
+.details-container {
+max-width: 520px; 
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 18px;
+
+}
+
+.details-container h2 {
+margin-top: 0;
+}
+
+.details-container p {
+line-height: 1.6;
+text-align: justify;
+}
+
+
+.highlight{
+border-radius: 4 px;
+border: 2px solid red;
+background-color:transparent;
+padding: 2px 7px;
+color: white
+
+
+}
+.highlight:hover {
+background-color: rgb(199, 2, 2); 
+}
+
+#imageDetails {
+    background-color:#f4f4f4;
+    color: #000; 
+    border-radius: 10px;
+    width: 300px;
+    height: 180px; 
+    margin: 20px auto; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    padding: 50px;
+}
+#imageDetails h2, #imageDetails p {
+    margin: 10px;
+}

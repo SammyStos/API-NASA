@@ -1,0 +1,182 @@
+body {
+    background-color: #000000; 
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #000000; 
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px;
+    border-radius: 1px;
+    border: 1px solid grey;
+    background-color: black;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.search-bar:focus {
+    background-color: #555;
+    outline: none;
+}
+
+.search-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(7, 7, 83);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #dd1717;
+}
+
+.nav-center {
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.logo {
+    max-width: 75px;
+    height: auto;
+    align-items: center;
+    
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+#apodImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    
+    justify-content: center;
+}
+
+.card {
+    background-color:#f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 70%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.card p {
+    margin: 10px 0 0;
+    color: black;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    
+}
+
+footer img{
+    width: 100%;
+    height: auto;
+    margin-top: 2px;
+    padding: 15px 0;
+    
+}
+.highlight{
+    border-radius: 4 px;
+    border: 2px solid red;
+    background-color:transparent;
+    padding: 2px 7px;
+    color: white
+
+
+}
+.highlight:hover {
+    background-color: rgb(199, 2, 2); 
+}
+h1{
+    color: white
+}
+.container {
+    padding: 15px;
+    margin-top: 80px;
+    margin-left: 50px;
+    
+    
+ 
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+      
+  
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+}
+.card p {
+    margin: 5px 0;
+}
